@@ -219,8 +219,8 @@ const itinerary = [
 const tips = [
   {
     icon: <CreditCard className="size-6" />,
-    title: "Get a T-money Card at the Airport",
-    description: "Pick one up at Incheon Airport or any convenience store (GS25, CU, 7-Eleven). It costs 2,500 won. Load it with cash and tap it on every subway and bus — no need to buy tickets each time.",
+    title: "T-money Card — Only If You Take the Subway or Bus",
+    description: "If you plan to ride the subway or bus, pick up a T-money card at Incheon Airport or any convenience store (GS25, CU, 7-Eleven) — it costs 2,500 won. Load it with cash and tap it to pay. If you are only taking taxis, you do not need it at all.",
   },
   {
     icon: <Smartphone className="size-6" />,
@@ -262,7 +262,7 @@ export default function SeoulItinerary() {
       {/* Main scrollable content */}
       <div
         className="min-h-screen bg-background"
-        style={{ paddingBottom: "calc(88px + env(safe-area-inset-bottom))" }}
+        style={{ paddingBottom: "calc(80px + env(safe-area-inset-bottom))" }}
       >
         {/* Header */}
         <header className="bg-card border-b border-border px-4 pt-8 pb-6 text-center">
@@ -276,7 +276,7 @@ export default function SeoulItinerary() {
 
         <main className="px-4 py-6 flex flex-col gap-6 max-w-lg mx-auto">
 
-          {/* Active day content */}
+          {/* Day itinerary content */}
           {itinerary.map((day) => (
             <DayCard
               key={day.day}
@@ -287,66 +287,79 @@ export default function SeoulItinerary() {
             />
           ))}
 
-          {/* Tips */}
-          <TipsSection tips={tips} />
+          {/* Info tab: Hotel + Tips */}
+          {activeDay === 0 && (
+            <>
+              {/* Hotel card */}
+              <section className="bg-card rounded-2xl border-2 border-primary overflow-hidden">
+                <div className="bg-primary px-5 py-4 flex items-center gap-3">
+                  <Hotel className="size-6 text-primary-foreground" />
+                  <h2 className="text-xl font-bold text-primary-foreground font-sans">
+                    Your Hotel
+                  </h2>
+                </div>
+                <div className="p-5 flex flex-col gap-4">
+                  <div>
+                    <p className="text-xl font-bold text-card-foreground leading-snug">
+                      Courtyard by Marriott Seoul Namdaemun
+                    </p>
+                    <p className="text-base text-muted-foreground mt-1">
+                      15 Toegye-ro 20-gil, Jung-gu, Seoul
+                    </p>
+                  </div>
 
-          {/* Hotel card */}
-          <section className="bg-card rounded-2xl border-2 border-primary overflow-hidden">
-            <div className="bg-primary px-5 py-4 flex items-center gap-3">
-              <Hotel className="size-6 text-primary-foreground" />
-              <h2 className="text-xl font-bold text-primary-foreground font-sans">
-                Your Hotel
-              </h2>
-            </div>
-            <div className="p-5 flex flex-col gap-4">
-              <div>
-                <p className="text-xl font-bold text-card-foreground leading-snug">
-                  Courtyard by Marriott Seoul Namdaemun
-                </p>
-                <p className="text-base text-muted-foreground mt-1">
-                  15 Toegye-ro 20-gil, Jung-gu, Seoul
-                </p>
-              </div>
+                  {/* Call hotel button */}
+                  <a
+                    href="tel:+82222118000"
+                    className="
+                      w-full flex items-center justify-center gap-3
+                      bg-emerald-600 active:bg-emerald-800
+                      text-white font-sans font-bold
+                      rounded-2xl py-5 px-4 text-xl
+                      shadow-md min-h-[64px]
+                      focus:outline-none focus:ring-4 focus:ring-emerald-300
+                    "
+                  >
+                    <Phone className="size-6 shrink-0" />
+                    Call the Hotel
+                  </a>
 
-              {/* Call hotel button */}
-              <a
-                href="tel:+82222118000"
-                className="
-                  w-full flex items-center justify-center gap-3
-                  bg-emerald-600 active:bg-emerald-800
-                  text-white font-sans font-bold
-                  rounded-2xl py-5 px-4 text-xl
-                  shadow-md min-h-[64px]
-                  focus:outline-none focus:ring-4 focus:ring-emerald-300
-                "
-              >
-                <Phone className="size-6 shrink-0" />
-                Call the Hotel
-              </a>
+                  {/* Maps button for hotel */}
+                  <MapsButton
+                    destination="Courtyard by Marriott Seoul Namdaemun"
+                  />
 
-              {/* Maps button for hotel */}
-              <MapsButton
-                destination="Courtyard by Marriott Seoul Namdaemun"
-              />
+                  {/* Emergency numbers */}
+                  <div className="bg-secondary rounded-xl px-4 py-4">
+                    <p className="font-sans font-bold text-base text-card-foreground mb-2">
+                      Korean Emergency Numbers
+                    </p>
+                    <p className="text-lg font-bold text-foreground">
+                      112 — Police
+                    </p>
+                    <p className="text-lg font-bold text-foreground">
+                      119 — Ambulance
+                    </p>
+                  </div>
+                </div>
+              </section>
 
-              {/* Emergency numbers */}
-              <div className="bg-secondary rounded-xl px-4 py-4">
-                <p className="font-sans font-bold text-base text-card-foreground mb-2">
-                  Korean Emergency Numbers
-                </p>
-                <p className="text-lg font-bold text-foreground">
-                  112 — Police
-                </p>
-                <p className="text-lg font-bold text-foreground">
-                  119 — Ambulance
-                </p>
-              </div>
-            </div>
-          </section>
+              {/* Tips */}
+              <TipsSection tips={tips} />
 
-          <footer className="text-center py-4 text-base text-muted-foreground font-sans">
-            Have a wonderful trip to Seoul!
-          </footer>
+              <footer className="text-center py-6 flex flex-col gap-2">
+                <p className="text-xl font-bold text-card-foreground font-sans">
+                  I love you, Mom.
+                </p>
+                <p className="text-lg text-muted-foreground font-sans">
+                  Be safe and have fun! 🇰🇷
+                </p>
+                <p className="text-sm text-muted-foreground font-sans mt-1">
+                  — Tiffany
+                </p>
+              </footer>
+            </>
+          )}
         </main>
       </div>
 
