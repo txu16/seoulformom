@@ -15,7 +15,7 @@
   --secondary: #f0ece6;
   --secondary-foreground: #3b2f2f;
   --muted: #f0ece6;
-  --muted-foreground: #7a6a5a;
+  --muted-foreground: #4e3d2d;
   --accent: #3b2f2f;
   --accent-foreground: #faf8f5;
   --destructive: oklch(0.577 0.245 27.325);
@@ -72,6 +72,9 @@
 }
 
 @layer base {
+  html {
+    font-size: 18px;
+  }
   * {
     @apply border-border outline-ring/50;
   }

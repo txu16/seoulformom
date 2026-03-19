@@ -54,6 +54,12 @@ const itinerary = [
         mapsDestination: "Yeji Sikdang, Myeongdong, Seoul",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNHWEtRVO1VbV9-7VLr4UoF5mSux7tuI-CWNHSniavPCM5PJBxbCvEzKd2mVVBDO7e4nIeVargobJsN9OKGJ4JFrI3ICM9703v9EsxqKy1sxqR-MXddJ7kqDO1ugnmNf1_FWkH85OWJDgzIKoYekPI-h=s800-w800-h600",
         description: "A beloved family-run hole-in-the-wall hidden down a Myeongdong alley, known for generous banchan, silky bibimbap, and old-school Korean warmth. Cash only.",
+        alternative: {
+          to: "Myeongdong Kyoja (Lunch)",
+          details: "Head to the main Myeongdong street — the restaurant is clearly marked and easy to find. Cards accepted. Expect a short wait but the line moves fast.",
+          description: "One of Seoul's most iconic local lunch spots, beloved for silky knife-cut noodle soup (kalguksu) and pan-fried kimchi dumplings. Quick, clean, and completely unpretentious.",
+          mapsDestination: "Myeongdong Kyoja, Seoul",
+        },
       },
       {
         from: "Yeji Sikdang",
@@ -76,6 +82,15 @@ const itinerary = [
         mapsDestination: "Sinsa Dongindong, Insadong, Seoul",
         image: "https://lh3.googleusercontent.com/places/ANXAkqExuMwaK3joTD-bKkFoisKE0KNXuQjcYOvxLG1PUjQp82a4EKX2NaAs5nfoluy4nRC98w3h3zls--zuQ5hEghu3MdfjUKFcHL4=s800-w800-h600",
         description: "A cozy, sit-down Korean restaurant in the heart of Insadong, celebrated for its braised ribs, savory beef pancakes, and generous side dishes. No BBQ — just refined, traditional Korean cooking.",
+        alternative: {
+          to: "Sanchon (Dinner)",
+          details: "A few steps into the Insadong alleys — look for the traditional wooden entrance. Book ahead as they serve a fixed-time set menu. Very calm and easy dining.",
+          description: "A serene Insadong institution serving Buddhist temple cuisine — a set menu of 20+ seasonal vegetarian small dishes in a beautifully restored traditional Korean house. A truly special and peaceful evening.",
+          mapsDestination: "Sanchon Restaurant, Insadong, Seoul",
+          tips: [
+            { type: "booking" as const, text: "Reservations strongly recommended — call ahead or book online. They serve set dinner seatings." },
+          ],
+        },
       },
       {
         from: "Sinsa Dongindong",
@@ -143,6 +158,15 @@ const itinerary = [
         tips: [
           { type: "restaurant" as const, text: "Gets busy at lunch — worth calling ahead or arriving right at 11am opening." },
         ],
+        alternative: {
+          to: "Tosokchon Samgyetang (Dinner)",
+          details: "Take a short taxi from Bukchon — about 5 minutes and under 5,000 won. The restaurant is large and easy to find, right near Gyeongbokgung Palace.",
+          description: "A legendary Seoul institution serving whole chicken stuffed with ginseng, glutinous rice, and jujube in a rich golden broth. Warming, nourishing, and deeply satisfying after a day of walking.",
+          mapsDestination: "Tosokchon Samgyetang, Seoul",
+          tips: [
+            { type: "timing" as const, text: "Go early for dinner — it fills up fast. Arriving at 5:30–6pm avoids the peak crowd." },
+          ],
+        },
       },
       {
         from: "Jungdamun Bukchon",
@@ -194,6 +218,15 @@ const itinerary = [
         mapsDestination: "Mansuui Jeongwon, Seoul",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNFuKjXUglG-49DZx1rWwHUPKLIb4IaD50YWwQihAvJcwm-OuVZnn7uUNcAUfvXfvIYCFm9K8OCVV8Y2ZPz4hpaO97a9x2t5cOY1s96hCZ53RK0Zuw3H-W2KjxCenhWyXMYDwxhyzFn3u2OhqI2QDgz4Cg=s800-w800-h600",
         description: "A warm, homestyle Korean gem near Bukchon serving comforting bowls of bulgogi, kimchi jjigae, and haemul pajeon. Feels like eating at a Korean grandmother's house.",
+        alternative: {
+          to: "Jaha Son Mandu (Lunch)",
+          details: "A short walk downhill from the Changdeokgung area — follow the signs toward Buamdong. Small and quiet, easy to find.",
+          description: "A quiet, beloved dumpling house tucked below Changdeokgung, known for delicate handmade mandu — steamed, pan-fried, or floating in a clear broth. Simple, deeply local, and very comforting.",
+          mapsDestination: "Jaha Son Mandu, Seoul",
+          tips: [
+            { type: "timing" as const, text: "Arrives early for lunch — seats fill up quickly around noon on weekends." },
+          ],
+        },
       },
       {
         from: "Mansuui Jeongwon",
