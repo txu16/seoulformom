@@ -14,6 +14,7 @@ import {
   Footprints,
   Banknote,
   Wifi,
+  Receipt,
 } from "lucide-react"
 import { MapsButton } from "@/components/maps-button"
 
@@ -50,6 +51,15 @@ const itinerary = [
       },
       {
         from: "Insadong",
+        to: "Ssamziegil",
+        details: "Ssamziegil is right inside the Insadong street — look for the open archway entrance. Step inside and follow the gentle spiral walkway lined with shops. Completely flat and easy to walk. Grab a snack from one of the stalls and sit in the open courtyard.",
+        tags: [{ type: "walk" as const, label: "Walk", time: "2 min" }],
+        mapsDestination: "Ssamziegil, Insadong, Seoul",
+        naverMapsDestination: "쌈지길",
+        description: "A charming open-air courtyard market nestled inside Insadong, with independent stalls selling handmade ceramics, art prints, fabric goods, and quirky gifts along a gentle spiral walkway. All flat, all in one loop — easy on the feet. Perfect for a relaxed browse and a snack.",
+      },
+      {
+        from: "Ssamziegil",
         to: "Yeji Sikdang (Lunch)",
         details: "Walk south toward Myeongdong. The restaurant is tucked in a small alley. Important: This restaurant is CASH ONLY — bring Korean won!",
         tags: [{ type: "walk" as const, label: "Walk", time: "10 min" }],
@@ -146,6 +156,7 @@ const itinerary = [
         tips: [
           { type: "walkIn" as const, text: "No booking needed — just walk in, no reservations required." },
           { type: "timing" as const, text: "Early morning only (before 10am) for quiet. By midday it's packed with tour groups — navigating crowds on cobblestones can be tough." },
+          { type: "timing" as const, text: "Aim to leave by 1:30pm — you have two lovely shops to visit this afternoon, and one closes at 5pm." },
         ],
       },
       {
@@ -160,6 +171,30 @@ const itinerary = [
       },
       {
         from: "EOE Seoul Café",
+        to: "Zero Space",
+        details: "Zero Space is literally steps away in the same Bukchon alleys — about a 1 minute walk. Allow 20–30 minutes to browse at your own pace. Note from Tiffany: she would love a keychain or souvenir from here! 🎁",
+        tags: [{ type: "walk" as const, label: "Walk", time: "1 min" }],
+        mapsDestination: "Zero Space Bukchon, Seoul",
+        naverMapsDestination: "제로스페이스 북촌",
+        description: "A beloved Bukchon shop packed with tiny handcrafted souvenirs — enamel keychains, pins, magnets, postcards, and passport cases. Everything is cute, lightweight, and perfect to carry home as gifts.",
+        tips: [
+          { type: "timing" as const, text: "Closes at 7pm — plenty of time this afternoon." },
+        ],
+      },
+      {
+        from: "Zero Space",
+        to: "Kachi Seoul",
+        details: "A 3–5 minute walk through the same Bukchon neighborhood. Browse handmade crafts inside a beautiful traditional hanok and grab a cold brew or traditional Korean drink while you shop.",
+        tags: [{ type: "walk" as const, label: "Walk", time: "3 min" }],
+        mapsDestination: "Kachi Seoul, Bukchon, Seoul",
+        naverMapsDestination: "가치서울 북촌",
+        description: "A souvenir and gift shop set inside a restored hanok courtyard, known for traditional Korean crafts, ceramics, fabric goods, and unique keepsakes. Order a cold brew or traditional sikhye drink and browse at a relaxed pace.",
+        tips: [
+          { type: "closed" as const, text: "Closes at 5pm — make sure to arrive by 4:30pm at the latest." },
+        ],
+      },
+      {
+        from: "Kachi Seoul",
         to: "Jungdamun Bukchon (Dinner)",
         details: "Both are in the same Bukchon area. Very close — just a short stroll.",
         tags: [{ type: "walk" as const, label: "Walk", time: "3 min" }],
@@ -304,6 +339,11 @@ const tips = [
     icon: <Wifi className="size-6" />,
     title: "Get WiFi or a SIM Card at the Airport",
     description: "You need internet for maps and for Uber. Pre-order a pocket WiFi or SIM card online before you fly — pick it up at the airport on arrival. Korea has excellent signal everywhere.",
+  },
+  {
+    icon: <Receipt className="size-6" />,
+    title: "Keep Receipts for a Tax Refund at the Airport",
+    description: "Korea has a tourist VAT refund system. If you spend 30,000 won or more at a participating store (look for the 'Tax Free' sign in the window), keep the receipt. Before you fly home, visit the tax refund desk at Incheon Airport to get about 10% back. Free money!",
   },
 ]
 
