@@ -8,9 +8,10 @@ interface MapsButtonProps {
 }
 
 export function MapsButton({ destination }: MapsButtonProps) {
-  const encoded = encodeURIComponent(destination + ", Seoul, South Korea")
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encoded}`
-  const naverMapsUrl = `https://map.naver.com/v5/search/${encoded}`
+  const encodedFull = encodeURIComponent(destination + ", Seoul, South Korea")
+  const encodedShort = encodeURIComponent(destination)
+  const googleMapsUrl = `https://maps.google.com/?q=${encodedFull}`
+  const naverMapsUrl = `https://map.naver.com/p/search/${encodedShort}`
 
   return (
     <div className="flex gap-2">
