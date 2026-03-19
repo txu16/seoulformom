@@ -56,6 +56,7 @@ const itinerary = [
         tags: [{ type: "walk" as const, label: "Walk", time: "2 min" }],
         mapsDestination: "Ssamziegil, Insadong, Seoul",
         naverMapsDestination: "쌈지길",
+        image: "https://www.theseoulguide.com/wp-content/uploads/2013/09/ssamziegil_market_in_insadong_seoul.jpg",
         description: "A charming open-air courtyard market nestled inside Insadong, with independent stalls selling handmade ceramics, art prints, fabric goods, and quirky gifts along a gentle spiral walkway. All flat, all in one loop — easy on the feet. Perfect for a relaxed browse and a snack.",
       },
       {
@@ -176,6 +177,7 @@ const itinerary = [
         tags: [{ type: "walk" as const, label: "Walk", time: "1 min" }],
         mapsDestination: "Zero Space Bukchon, Seoul",
         naverMapsDestination: "제로스페이스 북촌",
+        image: "https://wimg.heraldcorp.com/news/cms/2025/05/30/news-p.v1.20250527.020244aade1c4332a810d12b670423e7_P1.jpg",
         description: "A beloved Bukchon shop packed with tiny handcrafted souvenirs — enamel keychains, pins, magnets, postcards, and passport cases. Everything is cute, lightweight, and perfect to carry home as gifts.",
         tips: [
           { type: "timing" as const, text: "Closes at 7pm — plenty of time this afternoon." },
@@ -188,6 +190,7 @@ const itinerary = [
         tags: [{ type: "walk" as const, label: "Walk", time: "3 min" }],
         mapsDestination: "Kachi Seoul, Bukchon, Seoul",
         naverMapsDestination: "가치서울 북촌",
+        image: "https://storage.heypop.kr/assets/2024/11/06190906/%EA%B3%B5%EA%B0%84%EC%9D%B4%EB%AF%B8%EC%A7%80-1-4.jpg",
         description: "A souvenir and gift shop set inside a restored hanok courtyard, known for traditional Korean crafts, ceramics, fabric goods, and unique keepsakes. Order a cold brew or traditional sikhye drink and browse at a relaxed pace.",
         tips: [
           { type: "closed" as const, text: "Closes at 5pm — make sure to arrive by 4:30pm at the latest." },
