@@ -27,6 +27,7 @@ const itinerary = [
         to: "Deoksugung Palace",
         details: "The palace is right outside the hotel door. Walk straight out and you will see it!",
         tags: [{ type: "walk" as const, label: "Walk", time: "5 min" }],
+        naverMapsDestination: "덕수궁",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNG4g3e8WVSHQoZ1bZS4vHdo2X_TQTWC21XmwedJAsVTecufoWOmbB45PCC93SQk-PdlKRaDr8aAIEss3_7Lb8I7pe5dWSPdmm4CEnYifYa80j2jvbYrZsL4XUhDd4AyiQ4hZybPZ7kPc8CbuA=s800-w800-h600",
         description: "A tranquil royal palace at the heart of the city, where traditional Joseon architecture meets a leafy stone-walled path. Catch the Changing of the Guard for a vivid slice of Korean history.",
         tips: [
@@ -39,6 +40,7 @@ const itinerary = [
         to: "Insadong Culture Street",
         details: "A flat, pleasant walk heading northeast. Lots to see on the way.",
         tags: [{ type: "walk" as const, label: "Walk", time: "15 min" }],
+        naverMapsDestination: "인사동",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNEoEOiRbiiUHO7L4usqb-kAEoYtLB7mveEm2WgBpOZTxO6dF-wtXlbk1-CvIpglmUSHQ0lyofKPZEMJCec4do7FbVEqMZOZbLJ6W3Bq1rB7MUJDZDOYhXWuX3B9sQMS8C0Vb6f_7h2n1uUtOQ=s800-w800-h600",
         description: "A charming pedestrian street lined with tea houses, pottery shops, art galleries, and handmade crafts. The best place in Seoul to find authentic Korean souvenirs in a calm, unhurried setting.",
         tips: [
@@ -52,6 +54,7 @@ const itinerary = [
         details: "Walk south toward Myeongdong. The restaurant is tucked in a small alley. Important: This restaurant is CASH ONLY — bring Korean won!",
         tags: [{ type: "walk" as const, label: "Walk", time: "10 min" }],
         mapsDestination: "Yeji Sikdang, Myeongdong, Seoul",
+        naverMapsDestination: "예지식당 명동",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNHWEtRVO1VbV9-7VLr4UoF5mSux7tuI-CWNHSniavPCM5PJBxbCvEzKd2mVVBDO7e4nIeVargobJsN9OKGJ4JFrI3ICM9703v9EsxqKy1sxqR-MXddJ7kqDO1ugnmNf1_FWkH85OWJDgzIKoYekPI-h=s800-w800-h600",
         description: "A beloved family-run hole-in-the-wall hidden down a Myeongdong alley, known for generous banchan, silky bibimbap, and old-school Korean warmth. Cash only.",
         alternative: {
@@ -59,6 +62,7 @@ const itinerary = [
           details: "Head to the main Myeongdong street — the restaurant is clearly marked and easy to find. Cards accepted. Expect a short wait but the line moves fast.",
           description: "One of Seoul's most iconic local lunch spots, beloved for silky knife-cut noodle soup (kalguksu) and pan-fried kimchi dumplings. Quick, clean, and completely unpretentious.",
           mapsDestination: "Myeongdong Kyoja, Seoul",
+          naverMapsDestination: "명동교자",
         },
       },
       {
@@ -67,6 +71,7 @@ const itinerary = [
         details: "Short walk back north into the Insadong area. The temple is large and easy to find.",
         tags: [{ type: "walk" as const, label: "Walk", time: "5 min" }],
         mapsDestination: "Jogyesa Temple, Seoul",
+        naverMapsDestination: "조계사",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNFEhDMtv1uG9WKhxmfPSMRxQ4ZALu-4Ld8HbaEMIjJck4UUW7V7RiU55YgBzz4VnR9tgOH1L4r4BIIlieDq84PSa_wTK-StruyIcsYtSHv39sLWzkPQKMiWi2md8wM3viGK_mcold4L0quNNdM=s800-w800-h600",
         description: "Seoul's most important Buddhist temple, tucked quietly behind the city bustle. Ancient trees, colorful lanterns, and a golden main hall create an unexpectedly peaceful escape.",
         tips: [
@@ -80,6 +85,7 @@ const itinerary = [
         details: "Both are in the same Insadong area. Very close — just around the corner.",
         tags: [{ type: "walk" as const, label: "Walk", time: "2 min" }],
         mapsDestination: "Sinsa Dongindong, Insadong, Seoul",
+        naverMapsDestination: "신사동인동 인사동",
         image: "https://lh3.googleusercontent.com/places/ANXAkqExuMwaK3joTD-bKkFoisKE0KNXuQjcYOvxLG1PUjQp82a4EKX2NaAs5nfoluy4nRC98w3h3zls--zuQ5hEghu3MdfjUKFcHL4=s800-w800-h600",
         description: "A cozy, sit-down Korean restaurant in the heart of Insadong, celebrated for its braised ribs, savory beef pancakes, and generous side dishes. No BBQ — just refined, traditional Korean cooking.",
         alternative: {
@@ -87,6 +93,7 @@ const itinerary = [
           details: "A few steps into the Insadong alleys — look for the traditional wooden entrance. Book ahead as they serve a fixed-time set menu. Very calm and easy dining.",
           description: "A serene Insadong institution serving Buddhist temple cuisine — a set menu of 20+ seasonal vegetarian small dishes in a beautifully restored traditional Korean house. A truly special and peaceful evening.",
           mapsDestination: "Sanchon Restaurant, Insadong, Seoul",
+          naverMapsDestination: "산촌 인사동",
           tips: [
             { type: "booking" as const, text: "Reservations strongly recommended — call ahead or book online. They serve set dinner seatings." },
           ],
@@ -101,6 +108,7 @@ const itinerary = [
           { type: "taxi" as const, label: "Taxi", time: "5 min — under 5,000 won" },
         ],
         mapsDestination: "Courtyard by Marriott Seoul Namdaemun",
+        naverMapsDestination: "코트야드바이메리어트서울남대문",
       },
     ],
   },
@@ -117,6 +125,7 @@ const itinerary = [
           { type: "taxi" as const, label: "Taxi", time: "12 min — about 8,000 won" },
         ],
         mapsDestination: "Gyeongbokgung Palace, Seoul",
+        naverMapsDestination: "경복궁",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNGvGAXHWL-kvhnWLojv4KmGxH05KhYRfTinQQCagXmWDD_qERExt_qdNuOEoscHm6bPsEsJAxGSSDBJKoNp0cPbJG-DfKn3konpUVH58sQ9t0mx4HKcPUk0YrNOYvFJ9NiWA6P28p8JeUtASrM=s800-w800-h600",
         description: "Seoul's grandest and most iconic palace, built in 1395 during the Joseon Dynasty. Sweeping gates, reflective pavilion ponds, and mountain backdrop make it unmissable.",
         tips: [
@@ -131,6 +140,7 @@ const itinerary = [
         details: "Head east out of the palace gates. A beautiful walk through traditional Korean houses. Slightly uphill but very scenic.",
         tags: [{ type: "walk" as const, label: "Walk", time: "15 min" }],
         mapsDestination: "Bukchon Hanok Village, Seoul",
+        naverMapsDestination: "북촌한옥마을",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNEs-WeNZE9ynq88P6wlewettR3BWEVCw1ugGGY-TvzDuvg41PmAF8AGaJ4P20GYS2BDK3qCLsi0f0A3_2E_MQDqVE0pvMnoyFbHZ83jdi5V9_CkeZ6iEA_l2TkgEhYd6bHPF4PbTpANLhGRsPs=s800-w800-h600",
         description: "A living neighborhood of 600-year-old traditional Korean homes (hanok) perched on a hillside between two palaces. Wander slowly — people still live here.",
         tips: [
@@ -144,6 +154,7 @@ const itinerary = [
         details: "The café is tucked right inside the Bukchon alleys. Great coffee with amazing views of the old houses!",
         tags: [{ type: "walk" as const, label: "Walk", time: "5 min" }],
         mapsDestination: "EOE Seoul Cafe, Bukchon, Seoul",
+        naverMapsDestination: "EOE서울카페 북촌",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNESoAKFKRy3fqHPXlYS9mtPm0XnwowfYJFsxD0s-0fl-N5Ek5I4CWkADLVoPae_dUjZgjc53cZNXRMxTGSs1FiX1z3QT1zUCnwtde45OjuyP5f7Z3XlzuDA3_7TGC7CAcvgXX_KegAIYl_J4JRWnqjf0w=s800-w800-h600",
         description: "A serene modern hanok café known for its earthy matcha lattes, black sesame parfait, and beautifully minimal interior. One of the most photogenic spots in Bukchon.",
       },
@@ -153,6 +164,7 @@ const itinerary = [
         details: "Both are in the same Bukchon area. Very close — just a short stroll.",
         tags: [{ type: "walk" as const, label: "Walk", time: "3 min" }],
         mapsDestination: "Jungdamun Bukchon, Seoul",
+        naverMapsDestination: "중담원 북촌",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNE3oHji0iGTu0WN-f7KG4jIx1oJAnyfBPUEn6EKKM-5b6Y80J0DqlcFV3GSuoDWcfaiTLgzrpGHRzEvFUMbyxjrCz6EDcmkMQ28CtBDy6CB474vg3Yjv3n6jaeb3W5GiOtzHejNWZi5wBFD33uPF8F0=s800-w800-h600",
         description: "A refined, quiet Korean restaurant tucked inside Bukchon, beloved for its bossam (tender boiled pork with kimchi) and crispy seafood pajeon. Reserve ahead.",
         tips: [
@@ -163,6 +175,7 @@ const itinerary = [
           details: "Take a short taxi from Bukchon — about 5 minutes and under 5,000 won. The restaurant is large and easy to find, right near Gyeongbokgung Palace.",
           description: "A legendary Seoul institution serving whole chicken stuffed with ginseng, glutinous rice, and jujube in a rich golden broth. Warming, nourishing, and deeply satisfying after a day of walking.",
           mapsDestination: "Tosokchon Samgyetang, Seoul",
+          naverMapsDestination: "토속촌삼계탕",
           tips: [
             { type: "timing" as const, text: "Go early for dinner — it fills up fast. Arriving at 5:30–6pm avoids the peak crowd." },
           ],
@@ -177,6 +190,7 @@ const itinerary = [
           { type: "taxi" as const, label: "Taxi", time: "12 min — 7,000–9,000 won" },
         ],
         mapsDestination: "Courtyard by Marriott Seoul Namdaemun",
+        naverMapsDestination: "코트야드바이메리어트서울남대문",
       },
     ],
   },
@@ -193,6 +207,7 @@ const itinerary = [
           { type: "taxi" as const, label: "Taxi", time: "10 min — 6,000–8,000 won" },
         ],
         mapsDestination: "Changdeokgung Secret Garden, Seoul",
+        naverMapsDestination: "창덕궁 후원",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNEwXAvKYASSWKz-BGeBdNGBmqQS_4kMUtzH98CF-fZTxezwvC0fnBD9FZkomDJef9CZLZn-A4pn4yENq-Y3hGAUeqNp24nukojfEBQHH0jN8BEbjKw9xdvItWXaNrsNm9gPM0UfL15b1JjfKbM=s800-w800-h600",
         description: "A hidden royal garden behind Changdeokgung Palace, once reserved exclusively for the king. Guided tours wind through ancient pavilions, lotus ponds, and forested hillside paths.",
         tips: [
@@ -207,6 +222,7 @@ const itinerary = [
         details: "Walk southwest into the Bukchon lanes. A peaceful and beautiful traditional teahouse — perfect for a rest.",
         tags: [{ type: "walk" as const, label: "Walk", time: "10 min" }],
         mapsDestination: "Chatteul Teahouse, Bukchon, Seoul",
+        naverMapsDestination: "차뜰",
         image: "https://lh3.googleusercontent.com/places/ANXAkqG2hN1EViDZs4v79jGDbYRXqH0q3qPypfpn5F3R98z6sf9vJq6nu3c1uv4lesmirz1r8cJ7gW1EpHDlbJLgLepOEaZUmKmVHVo=s800-w800-h600",
         description: "A traditional Korean teahouse perched in the Bukchon village with views over the rooftops. Staff walk you through the tea steeping ritual — try the rice cakes and honey biscuits.",
       },
@@ -216,6 +232,7 @@ const itinerary = [
         details: "Both are in the Bukchon area — very close to each other!",
         tags: [{ type: "walk" as const, label: "Walk", time: "5 min" }],
         mapsDestination: "Mansuui Jeongwon, Seoul",
+        naverMapsDestination: "만수의정원",
         image: "https://lh3.googleusercontent.com/place-photos/AL8-SNFuKjXUglG-49DZx1rWwHUPKLIb4IaD50YWwQihAvJcwm-OuVZnn7uUNcAUfvXfvIYCFm9K8OCVV8Y2ZPz4hpaO97a9x2t5cOY1s96hCZ53RK0Zuw3H-W2KjxCenhWyXMYDwxhyzFn3u2OhqI2QDgz4Cg=s800-w800-h600",
         description: "A warm, homestyle Korean gem near Bukchon serving comforting bowls of bulgogi, kimchi jjigae, and haemul pajeon. Feels like eating at a Korean grandmother's house.",
         alternative: {
@@ -223,6 +240,7 @@ const itinerary = [
           details: "A short walk downhill from the Changdeokgung area — follow the signs toward Buamdong. Small and quiet, easy to find.",
           description: "A quiet, beloved dumpling house tucked below Changdeokgung, known for delicate handmade mandu — steamed, pan-fried, or floating in a clear broth. Simple, deeply local, and very comforting.",
           mapsDestination: "Jaha Son Mandu, Seoul",
+          naverMapsDestination: "자하손만두",
           tips: [
             { type: "timing" as const, text: "Arrives early for lunch — seats fill up quickly around noon on weekends." },
           ],
@@ -234,6 +252,7 @@ const itinerary = [
         details: "Walk southwest toward Insadong for a final afternoon of shopping, souvenirs, and exploring at your own pace.",
         tags: [{ type: "walk" as const, label: "Walk", time: "10 min" }],
         mapsDestination: "Insadong, Seoul",
+        naverMapsDestination: "인사동",
       },
       {
         from: "Insadong",
@@ -244,6 +263,7 @@ const itinerary = [
           { type: "taxi" as const, label: "Taxi", time: "5 min — under 5,000 won" },
         ],
         mapsDestination: "Courtyard by Marriott Seoul Namdaemun",
+        naverMapsDestination: "코트야드바이메리어트서울남대문",
       },
     ],
   },
@@ -360,6 +380,7 @@ export default function SeoulItinerary() {
                   {/* Maps button for hotel */}
                   <MapsButton
                     destination="Courtyard by Marriott Seoul Namdaemun"
+                    naverDestination="코트야드바이메리어트서울남대문"
                   />
 
                   {/* Emergency numbers */}
@@ -382,13 +403,10 @@ export default function SeoulItinerary() {
 
               <footer className="text-center py-6 flex flex-col gap-2">
                 <p className="text-xl font-bold text-card-foreground font-sans">
-                  I love you, Mom.
+                  Have so much fun mom!
                 </p>
                 <p className="text-lg text-muted-foreground font-sans">
-                  Be safe and have fun! 🇰🇷
-                </p>
-                <p className="text-sm text-muted-foreground font-sans mt-1">
-                  — Tiffany
+                  We love you! 🇰🇷
                 </p>
               </footer>
             </>

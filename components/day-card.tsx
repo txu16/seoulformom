@@ -22,6 +22,7 @@ interface LegAlternative {
   details: string
   tips?: Tip[]
   mapsDestination?: string
+  naverMapsDestination?: string
   image?: string
   description?: string
 }
@@ -33,6 +34,7 @@ interface Leg {
   tags: Tag[]
   tips?: Tip[]
   mapsDestination?: string
+  naverMapsDestination?: string
   image?: string
   description?: string
   alternative?: LegAlternative
@@ -110,6 +112,7 @@ function LegCard({ leg, index, total }: { leg: Leg; index: number; total: number
         details: leg.alternative.details,
         tips: leg.alternative.tips,
         mapsDestination: leg.alternative.mapsDestination ?? leg.alternative.to,
+        naverMapsDestination: leg.alternative.naverMapsDestination,
         image: leg.alternative.image,
         description: leg.alternative.description,
       }
@@ -118,6 +121,7 @@ function LegCard({ leg, index, total }: { leg: Leg; index: number; total: number
         details: leg.details,
         tips: leg.tips,
         mapsDestination: leg.mapsDestination ?? leg.to,
+        naverMapsDestination: leg.naverMapsDestination,
         image: leg.image,
         description: leg.description,
       }
@@ -239,7 +243,7 @@ function LegCard({ leg, index, total }: { leg: Leg; index: number; total: number
         )}
 
         {/* Maps buttons */}
-        <MapsButton destination={display.mapsDestination} />
+        <MapsButton destination={display.mapsDestination} naverDestination={display.naverMapsDestination} />
       </div>
     </div>
   )

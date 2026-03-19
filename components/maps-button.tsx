@@ -4,14 +4,12 @@ import { MapPin } from "lucide-react"
 
 interface MapsButtonProps {
   destination: string
-  label?: string
+  naverDestination?: string
 }
 
-export function MapsButton({ destination }: MapsButtonProps) {
-  const encodedFull = encodeURIComponent(destination + ", Seoul, South Korea")
-  const encodedShort = encodeURIComponent(destination)
-  const googleMapsUrl = `https://maps.google.com/?q=${encodedFull}`
-  const naverMapsUrl = `https://map.naver.com/p/search/${encodedShort}`
+export function MapsButton({ destination, naverDestination }: MapsButtonProps) {
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(destination)}`
+  const naverMapsUrl = `https://map.naver.com/p/search/${encodeURIComponent(naverDestination ?? destination)}`
 
   return (
     <div className="flex gap-2">
