@@ -172,7 +172,7 @@ const itinerary = [
       {
         from: "EOE Seoul Café",
         to: "Zero Space",
-        details: "Zero Space is literally steps away in the same Bukchon alleys — about a 1 minute walk. Allow 20–30 minutes to browse at your own pace. Note from Tiffany: she would love a keychain or souvenir from here! 🎁",
+        details: "Zero Space is literally steps away in the same Bukchon alleys — about a 1 minute walk. Allow 20–30 minutes to browse at your own pace. Note from Tiffany: she would love a cute souvenir from here! 🎁",
         tags: [{ type: "walk" as const, label: "Walk", time: "1 min" }],
         mapsDestination: "Zero Space Bukchon, Seoul",
         naverMapsDestination: "제로스페이스 북촌",
