@@ -71,6 +71,7 @@ const itinerary = [
         alternative: {
           to: "Myeongdong Kyoja (Lunch)",
           details: "Head to the main Myeongdong street — the restaurant is clearly marked and easy to find. Cards accepted. Expect a short wait but the line moves fast.",
+          image: "https://cdn.shopify.com/s/files/1/0609/9376/5551/files/myeongdong-kyoja-main-store-seoul-noodle-michelin_10.jpg?v=1749004772",
           description: "One of Seoul's most iconic local lunch spots, beloved for silky knife-cut noodle soup (kalguksu) and pan-fried kimchi dumplings. Quick, clean, and completely unpretentious.",
           mapsDestination: "Myeongdong Kyoja, Seoul",
           naverMapsDestination: "명동교자",
@@ -102,6 +103,7 @@ const itinerary = [
         alternative: {
           to: "Sanchon (Dinner)",
           details: "A few steps into the Insadong alleys — look for the traditional wooden entrance. Book ahead as they serve a fixed-time set menu. Very calm and easy dining.",
+          image: "https://jerikajourneys.wordpress.com/wp-content/uploads/2019/01/appetizers.jpg",
           description: "A serene Insadong institution serving Buddhist temple cuisine — a set menu of 20+ seasonal vegetarian small dishes in a beautifully restored traditional Korean house. A truly special and peaceful evening.",
           mapsDestination: "Sanchon Restaurant, Insadong, Seoul",
           naverMapsDestination: "산촌 인사동",
@@ -211,6 +213,7 @@ const itinerary = [
         alternative: {
           to: "Tosokchon Samgyetang (Dinner)",
           details: "Take a short taxi from Bukchon — about 5 minutes and under 5,000 won. The restaurant is large and easy to find, right near Gyeongbokgung Palace.",
+          image: "https://danielfooddiary.com/wp-content/uploads/2024/04/tosokchon1-scaled.jpg",
           description: "A legendary Seoul institution serving whole chicken stuffed with ginseng, glutinous rice, and jujube in a rich golden broth. Warming, nourishing, and deeply satisfying after a day of walking.",
           mapsDestination: "Tosokchon Samgyetang, Seoul",
           naverMapsDestination: "토속촌삼계탕",
@@ -276,6 +279,7 @@ const itinerary = [
         alternative: {
           to: "Jaha Son Mandu (Lunch)",
           details: "A short walk downhill from the Changdeokgung area — follow the signs toward Buamdong. Small and quiet, easy to find.",
+          image: "https://bonetappetit.com/wp-content/uploads/2018/07/img_1958.jpg",
           description: "A quiet, beloved dumpling house tucked below Changdeokgung, known for delicate handmade mandu — steamed, pan-fried, or floating in a clear broth. Simple, deeply local, and very comforting.",
           mapsDestination: "Jaha Son Mandu, Seoul",
           naverMapsDestination: "자하손만두",
